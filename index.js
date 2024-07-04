@@ -6,8 +6,7 @@ function grandfather() {
 
     function child() {
       console.log("Inside child function");
-      let a = "hello"
-      return a;
+      
     }
 
     return child;
@@ -20,5 +19,4 @@ function grandfather() {
 const fatherFunction = grandfather(); // This will log "Inside grandfather function"
 
 let child =  fatherFunction()
-let b = child()
-console.log(b)
+child()
